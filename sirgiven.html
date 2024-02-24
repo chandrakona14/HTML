@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body bgcolor="yellow">
+    <center>
+        <h1>User Registration</h1>
+        <form name="reg-frm">
+            <table cellpadding="7">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="uname" required pattern="[A-Za-z]{1,}" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Email-ID</td>
+                    <td><input type="email" name="email_id"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" checked>Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <input type="checkbox" name="lang" value="C" checked>C
+                        <input type="checkbox" name="lang" value="C++" checked>C++
+                        <input type="checkbox" name="lang" value="PHP" checked>PHP
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <textarea name="address" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city">
+                            <option value="" selected>-Select City-</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select File</td>
+                    <td><input type="file" name="ff"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="reset" name="rs" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit" name="ok" value="Register">
+                    </td>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

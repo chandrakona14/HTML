@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        .required::after{
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="background-color:powderblue;">Individual Registration</h4>
+    <h3 style="color:red">mandatory*</h3>
+    <h3 style="background-color:powderblue;">GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DECLARATION<BR>Please use a valid E-MAIL ID and mobile number in registration.</h3>
+    <table cellpadding="7">
+        <tr>
+            <td class="required">User ID</td>
+            <td><input type ="text"name="uname" placeholder="TEST"></td>
+        </tr>
+        <tr>
+            <td class="required">Password</td>
+            <td><input type="password"name="pwd"></td>
+        </tr>
+        <tr>
+            <td class="required">Confirm Password</td>
+            <td><input type="password"name="cpwd"></td>
+        </tr>
+    </table>
+    <p style="color:cornflowerblue">If you forgot your password. We will identify you with this information</p>
+    <table>
+        <tr>
+            <td class="required">Security Question</td>
+            <td><input type="text"name="sq"placeholder="What is your pet name"></td>
+        </tr>
+        <tr>
+            <td class="required">Security Answer</td>
+            <td><input type="password"name="sa"></td>
+        </tr>
+        <tr>
+            <td class="required">Preferred Language</td>
+            <td><select name="language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+            </select></td>
+        </tr>
+    </table>
+        <h4 style="background-color: powderblue;">Personal Details</h4>
+    <table>
+        <tr>
+            <td class="required">First Name</td>
+            <td><input type="text"name="fname"></td>
+        </tr>
+        <tr>
+            <td>Middle Name</td>
+            <td><input type="text"name="mname"></td>
+        </tr>
+        <tr>
+            <td class="required">Last Name</td>
+            <td><input type="text"name="lname"></td>
+        </tr>
+        <tr>
+            <td class="required">Gender</td>
+            <td><input type="radio"name="gen"value="Male">Male
+                <input type="radio"name="gen"value="Female">Female
+            </td>
+        </tr>
+        <tr>
+            <td class="required">Married Status</td>
+            <td><input type="radio"name="ms"value="Married">Married
+                <input type="radio"name="ms"value="Unmarried">Unmarried
+            </td>
+        </tr>
+        <tr>
+            <td class="required">Date of Birth</td>
+            <td><input type="date"name="dob"></td>
+        </tr>
+        <tr>
+            <td class="required">Occupation</td>
+            <td><select name="Public">
+                <option value="Business">Business</option>
+                <option value="Govertmaent Job">Govertmaent Job</option>
+                <option value="Student">Student</option>
+                <option value="Private Job">Private Job</option>
+                <option value="Others">Others</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Aadhar Card No</td>
+            <td><input type="number"name="adc">(optional)</td>
+        </tr> 
+        <tr>
+            <td>Pan Card</td>
+            <td><input type="email"name="pc">(optional)</td>
+        </tr>
+        <tr>
+            <td class="required">Email</td>
+            <td><input type="email"name="email"></td>
+        </tr>
+        <tr>
+            <td class="required">Mobile</td>
+            <td>+91<input type="number"name="mob"></td>
+        </tr> 
+        <tr>
+            <td class="required">Nationality</td>
+            <td>
+                <select name="Nationality">
+                <option value="" slected>-select city-</option>
+                <option value="India">India</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="China">China</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Sreelanka">Sreelanka</option>
+                <option value="BHutan">Bhutan</option>
+                <option value="Others">Others</option>
+            </select></td>
+        </tr>
+          
+    </table> 
+    <h4 style="background-color: powderblue;">Residential Address</h4>
+</body>
+</html>
